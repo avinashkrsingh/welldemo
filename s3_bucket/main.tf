@@ -4,7 +4,7 @@ resource "aws_s3_bucket" "testlog_bucket12_01" {
 }
 
 resource "aws_s3_bucket" "b" {
-  bucket_prefix = var.bucket_prefix
+  bucket_prefix = "terraform-test"
   acl           = "private"
 
   versioning {
