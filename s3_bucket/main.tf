@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "testlog_bucket12_01" {
-  bucket_prefix = var.bucket_prefix
+  bucket_prefix = "terraform"
   acl           = "log-delivery-write"
 }
 
