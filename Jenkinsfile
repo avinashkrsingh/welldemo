@@ -1,4 +1,4 @@
-properties([pipelineTriggers([githubBranches(deleted)])])
+properties([pipelineTriggers([githubBranches()])])
  
 pipeline {
     /* specify nodes for executing */
