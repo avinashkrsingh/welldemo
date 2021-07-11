@@ -3,7 +3,7 @@ properties([pipelineTriggers([githubPush()])])
 pipeline {
     /* specify nodes for executing */
     agent {
-        label 'github-ci'
+       any
     }
  
     stages {
@@ -12,7 +12,7 @@ pipeline {
             steps {
                 checkout([
                  $class: 'GitSCM',
-                 branches: [[name: 'master']],
+                 branches: [[name: 'avinashkrsingh-patch-1']],
                  userRemoteConfigs: [[
                     url: 'https://github.com/avinashkrsingh/welldemo.git',
                     credentialsId: '',
