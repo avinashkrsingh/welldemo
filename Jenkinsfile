@@ -12,7 +12,7 @@ pipeline {
             steps {
                 checkout([
                  $class: 'GitSCM',
-                 branches: [[name: 'avinashkrsingh-patch-1']],
+                 branches: [[name: 'test']],
                  userRemoteConfigs: [[
                     url: 'https://github.com/avinashkrsingh/welldemo.git',
                     credentialsId: '',
