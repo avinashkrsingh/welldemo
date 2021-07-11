@@ -2,7 +2,9 @@ properties([pipelineTriggers([githubPush()])])
  
 pipeline {
     /* specify nodes for executing */
+
    agent any
+
  
     stages {
         /* checkout repo */
@@ -28,7 +30,7 @@ pipeline {
     /* Cleanup workspace */
     post {
        always {
-           deleteDir()
+           deleteDir()        
        }
    }
 }
