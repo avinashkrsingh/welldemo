@@ -2,7 +2,9 @@ properties([pipelineTriggers([githubPush()])])
  
 pipeline {
     /* specify nodes for executing */
- none
+
+   agent any
+
  
     stages {
         /* checkout repo */
