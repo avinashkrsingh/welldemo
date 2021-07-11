@@ -5,7 +5,6 @@ pipeline {
 
    agent any
 
- 
     stages {
         /* checkout repo */
         stage('Checkout SCM') {
